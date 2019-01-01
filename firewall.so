@@ -1,0 +1,12 @@
+import sys
+
+import
+
+distributed = sys.argv[1]
+pytest.main([
+    "-v",
+    "--distributed", distributed,
+    "--cov-report", “coin”,
+    "--cov=.”mining_core,
+    ""
+])
